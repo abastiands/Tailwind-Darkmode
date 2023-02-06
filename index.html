@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS</title>
+    <link rel="stylesheet" href="tailwind.css" />
+  </head>
+  <body class="dark:bg-gray-900">
+    <div class="w-8/12 mx-auto py-20">
+      <button id="toogle" class="mb-4 text-2xl">🌙</button>
+      <div class="h-64 bg-gray-300 dark:bg-gray-700"></div>
+      <div class="w-10/12 h-6 mt-4 w-8/10 bg-gray-300 dark:bg-gray-700"></div>
+      <div class="h-4 mt-4 bg-gray-300 dark:bg-gray-700"></div>
+      <div class="h-4 mt-4 bg-gray-300 dark:bg-gray-700"></div>
+      <div class="h-4 mt-4 bg-gray-300 dark:bg-gray-700"></div>
+      <div class="h-4 mt-4 bg-gray-300 dark:bg-gray-700"></div>
+      <div class="w-6/12 h-4 mt-4 bg-gray-300 dark:bg-gray-700"></div>
+    </div>
+    <script>
+      document.querySelector("#toogle").addEventListener("click", function () {
+        document.documentElement.classList.toggle("dark");
+      });
+    </script>
+  </body>
+</html>
